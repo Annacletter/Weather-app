@@ -1,6 +1,6 @@
 ## WEATHER-APP
 
-![Weather-app](https://github.com/Annacletter/Weather-app/readme.jpg)
+![Weather-app](readme.jpg)
 
 - [WEATHER APP](#WEATHER-APP)
 - [Introduction](#Introduction)

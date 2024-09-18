@@ -1,76 +1,67 @@
-Weather App
-A dynamic weather application built using React, Bootstrap, CSS, and JavaScript, which fetches weather data simulated using JSONPlaceholder. This responsive app provides a clean and intuitive interface for users to input a city and get simulated weather details such as temperature, humidity, and wind speed.
+## WEATHER-APP
 
-Table of Contents
-Features
-Installation
-Usage
-Technologies
-Project Structure
-License
-Features
-Simulated Weather Data: Users can input any city, and the app will display mock weather data (temperature, humidity, wind speed) using JSONPlaceholder.
-Loading Spinner: Displays a loading spinner while data is being fetched.
-Error Handling: Alerts users if there's an issue with fetching data or input is invalid.
-Responsive Design: Mobile-friendly interface using Bootstrap grid and styling.
-Clean UI: Organized layout with a minimalist design.
-Installation
-To set up the project locally, follow these steps:
+![Weather-app](https://github.com/Annacletter/Weather-app/readme.jpg)
 
-Clone the repository:
+- [WEATHER APP](#WEATHER-APP)
+- [Introduction](#Introduction)
+- [About](#About)
+- [Timeline](#Timeline)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Authors](#Authors)
+- [Licence](#Licence)
 
-bash
-Copy code
-git clone https://github.com/your-username/weather-app.git
-Navigate to the project directory:
+## Introduction
+* This is a weather application that allows users to search for a city and retrieve simulated weather data like temperature, humidity, and wind speed. The app is built using React, Bootstrap, CSS, and JavaScript, with data simulated using JSONPlaceholder.
 
-bash
-Copy code
-cd weather-app
-Install the dependencies:
+[Deployment page](https://Annacletter.github.io/Weather-app/)
 
-bash
-Copy code
+[Linkedin Ann]()
+
+## About
+* The Weather App is designed to offer a simple, user-friendly interface to retrieve weather data for different cities. It simulates fetching real-time weather data using JSONPlaceholder and provides a clean layout optimized for both desktop and mobile platforms
+
+## Timeline:
+#Planning and Conceptualization: September 2024
+* Research: Gathering information and identifying the core features for a weather app.
+* Brainstorming: Deciding on tools, frameworks, and mock data sources (JSONPlaceholder).
+* Planning: Outlining a step-by-step guide for development.
+
+#Development: September 2024
+* Weather App Development: Coding the core features, integrating APIs (simulated), and ensuring mobile responsiveness using Bootstrap.
+* Technologies Practice: Practicing skills with React, JavaScript, CSS, and mock data handling.
+
+## Installation
+
+* Web Browser: Ensure you have a modern browser installed (e.g., Chrome, Firefox, Edge).
+
+* Clone the Repository: Use the following command to clone the project locally:
+
+* git clone https://github.com/Annacletter/Weather-app.git
+* Navigate to the Project Directory:
+* cd Weather-app
+
+* Install Dependencies: Install the necessary packages using:
+
 npm install
-Start the development server:
+Run the Application: Start the app using the following command:
 
-bash
-Copy code
 npm start
-Access the app: Open your browser and go to http://localhost:3000 to view the app.
+View the App: Open your browser and go to http://localhost:3000.
 
-Usage
-Enter any city name in the input field.
-Click the "Get Weather" button.
-The app will fetch simulated weather data from JSONPlaceholder, displaying the following:
-Temperature (randomly generated)
-Weather description (hardcoded as "Partly Cloudy")
-Humidity (random value)
-Wind speed (random value)
-If there’s an issue with fetching data, an error message will appear.
-Technologies
-React: A JavaScript library for building user interfaces.
-Bootstrap: CSS framework for responsive design.
-JavaScript: The main programming language used.
-CSS: For styling the application.
-JSONPlaceholder: Used to simulate the backend for fetching weather-like data.
-Project Structure
-bash
-Copy code
-weather-app/
-├── public/
-│   └── index.html        # Main HTML file
-├── src/
-│   ├── components/
-│   │   └── Weather.js    # Main weather component
-│   ├── App.js            # Root component
-│   ├── App.css           # Global styles
-│   └── index.js          # Main entry point
-├── README.md             # Project documentation
-└── package.json          # Project dependencies and scripts
-Breakdown
-Weather.js: This is the main component responsible for fetching weather data and rendering the input, loading spinner, and results.
-App.js: The root component that imports and renders the Weather component.
-App.css: Contains styling for the app, including layouts and button styles.
-License
-This project is licensed under the MIT License.
+## Navigation
+
+* Search for Weather:
+* Enter the name of the city you want to search for.
+* Click the "Get Weather" button.
+* Weather Information Displayed:
+* Temperature (simulated).
+* Humidity (randomly generated).
+* Wind speed (randomly generated).
+
+## Authors
+* Annacletter Mafema
+
+
+## Licence
+MIT Licence

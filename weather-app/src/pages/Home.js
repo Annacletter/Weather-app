@@ -4,7 +4,7 @@ import WeatherDisplay from '../components/WeatherDisplay';
 import mockData from '../mockData.json'; // Import your mock JSON data
 import { WiDaySunny, WiRain, WiSnow } from 'react-icons/wi'; // Weather icons
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './style.css';
+import '../style.css';
 
 const Home = () => {
   const [weather, setWeather] = useState(null);

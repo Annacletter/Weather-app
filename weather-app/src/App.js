@@ -1,13 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
-// Import other pages/components if you plan to add more routes
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" component={Home} />
+        {/* Use element and pass the component like this */}
+        <Route path="/" element={<Home />} />
         {/* Add other routes as needed */}
       </Routes>
     </Router>
@@ -15,4 +15,3 @@ function App() {
 }
 
 export default App;
-

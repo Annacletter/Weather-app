@@ -4,7 +4,7 @@ import WeatherDisplay from '../components/WeatherDisplay';
 import mockData from '../mockData.json'; // Import your mock JSON data
 import { WiDaySunny, WiRain, WiSnow } from 'react-icons/wi';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './style.css'; // Import your CSS file
+import '../style.css'; // Import your CSS file
 import sunnyImage from '../assets/sunny.jpg';
 import rainyImage from '../assets/rainy.jpg';
 import snowyImage from '../assets/snowy.jpg';

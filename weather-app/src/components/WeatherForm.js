@@ -7,6 +7,7 @@ const WeatherForm = ({ onSearch }) => {
     e.preventDefault();
     if (city) {
       onSearch(city);
+      setCity(''); // Clear the input field after submission
     }
   };
 

@@ -26,6 +26,8 @@ const WeatherDisplay = ({ weather }) => {
       <p>{weather.description}</p>
       <h3>{weather.temperature} °C</h3>
       {/* Additional weather info */}
+      <p>Humidity: {weather.humidity}%</p>
+      <p>Wind Speed: {weather.wind_speed} km/h</p>
     </div>
   );
 };

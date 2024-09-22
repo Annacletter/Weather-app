@@ -6,7 +6,6 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* Use element and pass the component like this */}
         <Route path="/" element={<Home />} />
         {/* Add other routes as needed */}
       </Routes>

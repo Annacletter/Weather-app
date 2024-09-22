@@ -1,7 +1,7 @@
 import React from 'react';
 import Home from './pages/Home';
-import Weather form from './components/WeatheForm';
-import Weather display from './components/WeatherDisplay';
+import WeatherForm from './components/WeatheForm';
+import WeatherDisplay from './components/WeatherDisplay';
 
 function App() {
   return (

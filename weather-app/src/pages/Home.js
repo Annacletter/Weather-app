@@ -3,7 +3,7 @@ import WeatherForm from '../components/WeatherForm';
 import WeatherDisplay from '../components/WeatherDisplay';
 import mockData from '../mockData.json'; // Import your mock JSON data
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles.css'; // Import updated styles
+import '../style.css'; // Import updated styles
 
 const Home = () => {
   const [weather, setWeather] = useState(null);

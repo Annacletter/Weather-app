@@ -1,20 +1,26 @@
 {
-  "weatherData": [
-    {
-      "id": 1,
-      "city": "Cape Town",
-      "temperature": "18°C",
-      "description": "Sunny",
-      "humidity": "60%",
-      "wind_speed": "15 km/h"
-    },
-    {
-      "id": 2,
-      "city": "New York",
-      "temperature": "22°C",
-      "description": "Cloudy",
-      "humidity": "70%",
-      "wind_speed": "10 km/h"
-    }
-  ]
+  "New York": {
+    "city": "New York",
+    "temperature": 22,
+    "description": "Rain",
+    "humidity": 80,
+    "wind_speed": 15,
+    "main": "Rain"
+  },
+  "Los Angeles": {
+    "city": "Los Angeles",
+    "temperature": 28,
+    "description": "Clear",
+    "humidity": 50,
+    "wind_speed": 10,
+    "main": "Clear"
+  },
+  "Chicago": {
+    "city": "Chicago",
+    "temperature": 0,
+    "description": "Snow",
+    "humidity": 60,
+    "wind_speed": 20,
+    "main": "Snow"
+  }
 }

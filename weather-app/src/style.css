@@ -1,12 +1,72 @@
+/* Root container for weather app */
 .weather-app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: background 0.5s ease;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  transition: background 0.5s ease-in-out;
 }
 
+/* Weather form styling */
+form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+input {
+  width: 70%;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 25%;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Weather card styling */
+.weather-card {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 90%;
+  max-width: 600px;
+}
+
+.weather-card h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.weather-card h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+/* Weather icon container */
+.weather-icon {
+  margin-top: 20px;
+}
+
+/* Weather background classes */
 .sunny {
   background-image: url('./assets/sunny.jpg');
 }
@@ -19,14 +79,18 @@
   background-image: url('./assets/snowy.jpg');
 }
 
-.weather-icon {
-  margin-top: 20px;
-}
+/* Mobile responsiveness */
+@media only screen and (max-width: 768px) {
+  .weather-card {
+    width: 100%;
+  }
 
-.weather-card {
-  background: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  text-align: center;
+  form {
+    flex-direction: column;
+  }
+
+  input, button {
+    width: 100%;
+    margin: 5px 0;
+  }
 }

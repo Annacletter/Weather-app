@@ -1,47 +1,48 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';  // Import useNavigate for programmatic navigation
-import { WiDaySunny, WiRain, WiSnow } from 'react-icons/wi';
+import React, { useState } from 'react';
+import WeatherForm from '../components/WeatherForm';
+import WeatherDisplay from '../components/WeatherDisplay';
+import mockData from '../mockData.json'; // Import your mock JSON data
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../styles.css'; // Import updated styles
 
-const WeatherDisplay = ({ weather }) => {
-  const navigate = useNavigate();  // Initialize navigate
+const Home = () => {
+  const [weather, setWeather] = useState(null);
+  const [bgClass, setBgClass] = useState('');
 
-  if (!weather) return <p>No weather data available</p>;
+  const handleSearch = (city) => {
+    const mockedWeather = mockData[city] || {
+      city: city,
+      temperature: Math.floor(Math.random() * 30) + 15,
+      description: 'Clear',
+      humidity: 50,
+      wind_speed: 10,
+      main: 'Clear',
+    };
 
-  let weatherIcon;
-  switch (weather.description) {
-    case 'Clear':
-      weatherIcon = <WiDaySunny size={50} />;
-      break;
-    case 'Rain':
-      weatherIcon = <WiRain size={50} />;
-      break;
-    case 'Snow':
-      weatherIcon = <WiSnow size={50} />;
-      break;
-    default:
-      weatherIcon = <WiDaySunny size={50} />;
-  }
+    setWeather(mockedWeather);
 
-  // Function to go to home page
-  const goHome = () => {
-    navigate('/');
+    // Set background class based on the weather condition
+    switch (mockedWeather.main) {
+      case 'Clear':
+        setBgClass('sunny');
+        break;
+      case 'Rain':
+        setBgClass('rainy');
+        break;
+      case 'Snow':
+        setBgClass('snowy');
+        break;
+      default:
+        setBgClass('');
+    }
   };
 
   return (
-    <div className="weather-card">
-      <h2>{weather.city}</h2>
-      {weatherIcon}
-      <p>{weather.description}</p>
-      <h3>{weather.temperature} °C</h3>
-      <p>Humidity: {weather.humidity}%</p>
-      <p>Wind Speed: {weather.wind_speed} km/h</p>
-
-      {/* Home button */}
-      <button onClick={goHome} className="btn btn-secondary">
-        Go to Home
-      </button>
+    <div className={`weather-app ${bgClass}`}>
+      <WeatherForm onSearch={handleSearch} />
+      <WeatherDisplay weather={weather} />
     </div>
   );
 };
 
-export default WeatherDisplay;
+export default Home;

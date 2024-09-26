@@ -1,10 +1,11 @@
 import React from 'react';
 import { WiDaySunny, WiRain, WiSnow } from 'react-icons/wi'; // Import icons
+import { Link } from 'react-router-dom'; // Ensure Link is imported from react-router-dom
 
 const LandingPage = () => {
   return (
     <div className="landing-page">
-      <h1>Welcome to the Global Weather Hub</h1>
+      <h1>Weather Report Hub</h1>
       <p>
         Stay informed with the latest weather updates from major cities across the United States. Whether you're in the bustling streets of New York, the sunny beaches of Los Angeles, or the windy city of Chicago, we've got you covered.
       </p>

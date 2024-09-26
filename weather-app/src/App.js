@@ -1,7 +1,8 @@
+// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';          // Import Home page
-import LandingPage from './components/LandingPage';  // Import Landing page
+import Home from './pages/Home';          // Import the Home page component
+import LandingPage from './components/LandingPage';  // Import the LandingPage component
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         {/* Home page accessible at '/home' */}
         <Route path="/home" element={<Home />} />
 
-        {/* Add more routes here if needed */}
+        {/* Add more routes as needed */}
       </Routes>
     </Router>
   );

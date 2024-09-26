@@ -1,5 +1,6 @@
 import React from 'react';
 import { WiDaySunny, WiRain, WiSnow } from 'react-icons/wi'; // Import icons
+import LandingPage  from './components/LandingPage';
 
 const WeatherDisplay = ({ weather }) => {
   if (!weather) return <p>No weather data available</p>;

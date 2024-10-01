@@ -12,8 +12,7 @@ const App = () => (
     <Routes>
       <Route path="/" element={<LandingPage />} />  {/* Fixing the missing closing tag */}
       <Route path="/Home" element={<Home />} />
-      <Route path="/Check-weather-status" element={<Home />} />  {/* Fixed the route path name */}
-      <Route path="/contact" element={<Contact />} />
+      <Route path="/Check-weather-status" element={<Home />} />  {/* Fixed the route path name */} 
     </Routes>
   </Router>
 );

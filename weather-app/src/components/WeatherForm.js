@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../styles.css';
 
 const WeatherForm = ({ onSearch }) => {
   const [city, setCity] = useState('');

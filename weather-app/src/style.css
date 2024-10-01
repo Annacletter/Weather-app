@@ -1,4 +1,54 @@
-/* styles.css */
+/* Navbar Styles */
+.navbar {
+  background-color: #343a40; /* Dark background color */
+}
+
+.navbar-brand {
+  color: blue; /* blue text color */
+  font-size: 3rem; /* Font size */
+  font-weight: bold; /* Font weight */
+  text-transform: uppercase; /* Uppercase text */
+  margin-right: auto;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #343a40;
+  font-size: 1rem; /* Font size */
+  font-weight: 500; /* Font weight */
+  padding: 0.5rem 1rem; /* Padding */
+  margin-left: auto;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #f8f9fa; /* Light color on hover */
+  background-color: #007bff;
+  border-radius: 0.25rem; /* Rounded corners */
+}
+
+.navbar-toggler {
+  border-color: #ffffff;
+  }
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;base64,...');
+}
+
+/* Container for alignment */
+.container {
+  max-width: 1140px; /* Maximum width of the container */
+}
+
+.navbar-nav .nav-item {
+    margin: 0.5rem 0; /* Space between nav items */
+  }
+
+/* Container for alignment */
+.container {
+  max-width: 1140px; /* Maximum width of the container */
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Center items vertically */
+}
+
 .landing-page {
   text-align: center;
   padding: 50px;

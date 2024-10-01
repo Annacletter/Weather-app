@@ -2,7 +2,7 @@ import React from 'react';
 import { WiDaySunny, WiRain, WiSnow } from 'react-icons/wi'; // Import icons
 import { Link } from 'react-router-dom'; // Ensure Link is imported from react-router-dom
 import Navbar from 'Navbar';
-import '../styles.css';
+import '../style.css';
 
 const LandingPage = () => {
   return (

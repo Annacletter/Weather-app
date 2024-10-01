@@ -3,6 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';          // Import the Home page component
 import LandingPage from './components/LandingPage';  // Import the LandingPage component
+import Navbar from './components/Navbar';
 
 const App = () => (
   <Router>

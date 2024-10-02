@@ -4,7 +4,7 @@
 }
 
 .navbar-brand {
-  color: blue; /* blue text color */
+  color: orange; /* orange text color */
   font-size: 3rem; /* Font size */
   font-weight: bold; /* Font weight */
   text-transform: uppercase; /* Uppercase text */
@@ -52,6 +52,7 @@
 .landing-page {
   text-align: center;
   padding: 50px;
+  background-color: #d3d3d3;
 }
 
 .landing-page button {

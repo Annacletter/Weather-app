@@ -122,7 +122,7 @@ form {
   gap: 10px;
   position: absolute; /* This will allow the form to move freely within its container */
   top: 0; /* Align to top */
-  left: 0; /* Align to left */
+  right: 0; /* Align to right */
 }
 
 input {

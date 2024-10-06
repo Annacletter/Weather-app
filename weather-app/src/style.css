@@ -116,10 +116,13 @@
 form {
   width: 100%;
   max-width: 500px;
-  margin: 0 auto;
+  margin: 0; /* Remove auto margin to disable center alignment */
   display: flex;
-  justify-content: center;
+  justify-content: flex-start; /* Align items to the start */
   gap: 10px;
+  position: absolute; /* This will allow the form to move freely within its container */
+  top: 0; /* Align to top */
+  left: 0; /* Align to left */
 }
 
 input {

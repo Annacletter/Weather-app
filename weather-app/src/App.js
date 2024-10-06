@@ -1,19 +1,20 @@
-// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';          // Import the Home page component
-import LandingPage from './components/LandingPage';  // Import the LandingPage component
+import Home from './pages/Home';
+import LandingPage from './components/LandingPage';
 import Navbar from './components/Navbar';
 
 const App = () => (
   <Router>
     <Navbar />
     <Routes>
-      <Route path="/" element={<LandingPage />} />  {/* Fixing the missing closing tag */}
-      <Route path="/Home" element={<Home />} />
-      <Route path="/Check-weather-status" element={<Home />} />  {/* Fixed the route path name */} 
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="/check-weather-status" element={<Home />} />  {/* Correct path */}
+      {/* Add other routes as needed */}
     </Routes>
   </Router>
 );
 
 export default App;
+

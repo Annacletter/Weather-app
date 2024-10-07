@@ -1,6 +1,6 @@
 // src/pages/About.js
 import React, { useState, useEffect } from 'react';
-import './style.css'; // You can add your custom styles
+import '../style.css'; // You can add your custom styles
 
 const About = () => {
   const [weatherData, setWeatherData] = useState(null);
